@@ -1,0 +1,18 @@
+[package]
+name = "pico-emit"
+version = "0.2.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[test]]
+name = "integration"
+
+[dependencies]
+ux2 = { path = "../libs/ux2/ux2" }
+
+[dev-dependencies]
+probe-rs = "0.21"
+lazy_static = "1.4.0"
+anyhow = "1.0.72"
+rand = "0.8"
+bytemuck = "1.14.0"

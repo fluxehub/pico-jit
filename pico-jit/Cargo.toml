@@ -1,0 +1,12 @@
+[package]
+name = "pico-jit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ux2 = { path = "../libs/ux2/ux2" }
+wasmparser-nostd = { "path" = "../libs/wasmparser-nostd", default-features = false }
+pico-emit = { path = "../pico-emit" }
+rp-pico = "0.8"

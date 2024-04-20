@@ -1,0 +1,31 @@
+[package]
+edition = "2021"
+name = "bench"
+version = "0.1.0"
+license = "MIT"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+embedded-hal = { version = "0.2.5", features = ["unproven"] }
+
+defmt = "0.3"
+defmt-rtt = "0.4"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+
+# We're using a Pico by default on this template
+rp-pico = "0.8"
+
+pico-emit = { path = "../pico-emit" }
+embedded-alloc = "0.5"
+
+fugit = "0.3"
+
+pico-jit = { path = "../pico-jit" }
+
+# but you can use any BSP. Uncomment this to use the pro_micro_rp2040 BSP instead
+# sparkfun-pro-micro-rp2040 = "0.6"
+
+# If you're not going to use a Board Support Package you'll need these:
+# rp2040-hal = { version="0.8", features=["rt", "critical-section-impl"] }
+# rp2040-boot2 = "0.2"

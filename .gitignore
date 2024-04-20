@@ -1,0 +1,7 @@
+target/
+Cargo.lock
+
+# Currently used for experimenting with WASM generation, not intended for final use
+wasm-test/
+
+.DS_Store
